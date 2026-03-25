@@ -17,6 +17,7 @@ if (userRole === 'admin') {
 }
 
 console.log('Access Level: ', accessLevel);
+document.getElementById('access_level').innerHTML = 'Access Level: ' + accessLevel;
 
 // Check if user is logged in
 if (isLoggedIn) {
@@ -30,6 +31,7 @@ if (isLoggedIn) {
 }
 
 console.log("User Message:", userMessage);
+document.getElementById('user_message').innerHTML = 'User Message: ' + userMessage;
 
 // Determinate user category according to user type
 switch (userType) {
@@ -47,3 +49,4 @@ switch (userType) {
 }
 
 console.log('User Category: ',userCategory);
+document.getElementById('user_category').innerHTML = 'User Category: ' + userCategory;
