@@ -3,8 +3,8 @@ let count = 0;
 // Increases count by 1, and triggers other functions
 function increaseCount() {
     count++;
-    displayCount();
     checkCountValue();
+    displayCount();
 }
 
 // Display count of likes
@@ -19,4 +19,11 @@ function checkCountValue() {
     } else if (count === 20) {
         alert("Your Instagram post gained 20 followers! Keep it up!");
     }
+}
+
+// Resets count
+function resetCount() {
+    count = 0;
+    displayCount();
+    alert("The follower count has been reseted.");
 }
