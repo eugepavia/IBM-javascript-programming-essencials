@@ -52,6 +52,7 @@ function checkMatch() {
         card2.classList.add('matched');
         score += 2;
         scoreElement.textContent = `Score: ${score}`;
+        checkWin();
     } else {
         card1.textContent = '?';
         card2.textContent = '?';
@@ -93,3 +94,13 @@ function startGameTimer(timeLeft) {
 
 // For start/reset button
 startbtn.addEventListener('click', startGame);
+
+// if game ends before timer
+function checkWin() {
+    const selectedCards = gameContainer.querySelectorAll('.matched').length;
+    const allCards = cards.length;
+    if (!isNaN(selectedCards) && selectedCards === allCards) {
+        alert('You won!');
+        // stop timer
+    }
+}
