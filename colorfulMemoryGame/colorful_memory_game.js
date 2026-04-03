@@ -1,5 +1,5 @@
-const colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink', 'red', 'blue', 'green', 'purple', 'orange', 'pink'];
-let cards = shuffle(colors.concat(colors));
+const colors = ['red', 'blue', 'green', 'purple', 'orange', 'pink'];
+let cards = shuffle(colors.concat(colors)); //concat to create pairs
 let selectedCards = [];
 let score = 0;
 let timeLeft = 30;
